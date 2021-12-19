@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e -u -x
+
+. ../config
+
+mvn package \
+    exec:java \
+    "-Dexec.args=http://$(hostname):$HTTP_PORT/#$PAYLOAD_CLASS"

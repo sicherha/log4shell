@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e -u -x
+
+. ../config
+
+javac -d webroot --release 7 Payload.java
+python3 -m http.server "$HTTP_PORT" --directory webroot
