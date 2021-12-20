@@ -3,7 +3,8 @@
 This is a minimal demo exploit for the Log4Shell vulnerability ([CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228)).
 I created this to have a stripped-down demo that strictly focuses on the essentials instead of drowning in a bunch of Docker Compose/Node.js/Spring/Tomcat/... cruft.
 
-This repository contains MIT-licenced code from https://github.com/mbechler/marshalsec.
+The `LDAPRefServer` class was snatched from the MIT-licensed [marshalsec](https://github.com/mbechler/marshalsec) repository.
+All other code in this repository is in the public domain.
 
 ## Prerequisites
 * A UNIX shell
